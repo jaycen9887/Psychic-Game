@@ -1,0 +1,13 @@
+.jumbotron {
+    text-align: center;
+    font-size: 30px;
+}
+
+.container h1{
+    text-align: center;
+}
+
+#info {
+    width: 200px;
+    margin: auto;
+}
