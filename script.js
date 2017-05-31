@@ -23,17 +23,22 @@ document.onkeyup = function(event) {
                 guesses += (" " + key);
                 guessesMade.textContent = guesses;
                 if (checkGuess(key)) {
+                    
                     wins++;
                     winCount.textContent = wins;
+                    
                     playGame();
                 }
+                guessesRemain--;
+                guesscount.textContent = guessesRemain;
             }
         }
-        guessesRemain--;
-        guesscount.textContent = guessesRemain;
+        
     } else {
+        
         losses++;
         loseCount.textContent = losses;
+        
         playGame();
     }
     
@@ -57,7 +62,6 @@ var checkGuess = function(guess) {
 
 var playGame = function(){
     cmp = randomLetter();
-    console.log(cmp);
     resetGame();
 }
 

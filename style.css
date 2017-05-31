@@ -3,6 +3,11 @@
     font-size: 30px;
 }
 
+.container {
+    height: 798px;
+    border: 8px double
+}
+
 .container h1{
     text-align: center;
 }
@@ -10,4 +15,19 @@
 #info {
     width: 200px;
     margin: auto;
+}
+
+#game {
+    border: 4px solid #CCC;
+    height: 220px;
+}
+
+#game h1 {
+    margin-bottom: 20px;
+}
+
+#info {
+    border-left: 2px dashed #CCC;
+    border-right: 2px dashed #CCC;
+    padding: 0 10px;
 }
